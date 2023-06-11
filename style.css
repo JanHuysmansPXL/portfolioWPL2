@@ -413,7 +413,11 @@ a:link {
     max-height: 440px;
     object-fit: contain;
     border: 8px solid #FF5757;
-    border-collapse: collapse;
+}
+
+.wpl-buildr-img {
+    max-height: 440px;
+    object-fit: contain;
 }
 
 /*  --- SUBJECT-BLOCK ---
@@ -426,16 +430,23 @@ a:link {
     font-family: roc-grotesk, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: .9rem;
+    font-size: .95rem;
     line-height: 1.4;
     max-width: 75ch;
 }
 
 .subject-block__text--center {
-    font-size: .9rem;
+    font-size: .95rem;
     font-weight: 400;
     line-height: 1.3;
     width: auto;
+}
+
+.subject-block__title_xl {
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
 }
 
 .subject-block__title_lg {
