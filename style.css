@@ -154,6 +154,41 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
     font-size: 1.02rem;
 }
 
+/* FOOTER */
+
+.footer-bar {
+    background-color: #FDFDFD;
+    height: 1px;
+}
+
+.footer--header_sm {
+    text-transform: uppercase;
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .9rem;
+}
+
+.footer--text {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+.footer--link {
+    color: #FDFDFD;
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+.footer--link:hover {
+text-decoration: underline;
+}
 /* PROJECTS  */
 
 .projects-card-img {
