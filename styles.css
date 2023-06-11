@@ -39,7 +39,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 .color2 { background-color: #5151EF; }
 .color3 { background-color: #9B9BAB; }
 .color4 { background-color: #1E1E30; }
-.bg-red { background-color: #FF5757}
+.bg-red-prim { background-color: #FF5757}
 .bg-darker { background-color: #121212; }
 
 .text-light { color: #FDFDFD; }
@@ -47,8 +47,8 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 .text-color2 { color: #5151EF; }
 .text-color3 { color: #9B9BAB; }
 .text-color4 { color: #1E1E30; }
-.text-red { color: #FF5757}
-.text-dark { color: #121212; }
+.text-red-prim { color: #FF5757}
+.text-darker { color: #121212; }
 
 /* UTILITIES */
 
@@ -61,7 +61,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 }
 
 .currentpage {
-    text-decoration: underline;
+    text-decoration: line-through;
 }
 
 .cover {
@@ -315,35 +315,57 @@ a:link {
     display: none;
 }
 
+/* --- NAVBAR - PXL-DIGITAL -- AANGEPAST !! 🚀🚀 --- */
 
-
-
-/* --- NAVBAR - PXL-DIGITAL --- */
-
-.navbar-pxl__listitem {
+.navbar-pxl__listitem_dark {
     list-style-type: none;
     text-align: center;
-    background-color: #FFFFFF;
     border-radius: 0;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #121212;
 }
 
-.navbar-pxl__listitem:hover {
+.navbar-pxl__listitem_light {
+    list-style-type: none;
+    text-align: center;
+    border-radius: 0;
+    border-bottom: 1px solid #FDFDFD;
+}
+
+.navbar-pxl__listitem_dark:hover {
     background-color: #1E1E30;
 }
 
-.navbar-pxl__link {
+.navbar-pxl-link_dark {
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     text-decoration: none;
-    font-weight: 400;
     font-variant: titling-caps;
-    color: #1E1E30;
+    color: #121212;
 }
 
-.navbar-pxl__link:hover {
-    color: #FFFFFF;
+.navbar-pxl-link_light {
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: titling-caps;
+    color: #FDFDFD;
 }
 
-.navbar-pxl__link:active {
+.navbar-pxl-link_dark:hover {
+    color: #FDFDFD;
+}
+
+.navbar-pxl-link_dark:hover {
+    color: #121212;
+}
+
+.navbar-pxl-link_dark:active {
+    text-decoration-line: line-through;
+}
+
+.navbar-pxl-link_light:active {
     text-decoration-line: line-through;
 }
 
@@ -385,6 +407,15 @@ a:link {
     text-decoration: underline;
 }
 
+/* WPL1 */
+
+.wpl-branding-img {
+    max-height: 440px;
+    object-fit: contain;
+    border: 8px solid #FF5757;
+    border-collapse: collapse;
+}
+
 /*  --- SUBJECT-BLOCK ---
     TEST: nakijken of ik deze kan toepassen op meerdere elementen in de pagina
     -   Voor textopmaak blokken.!!
@@ -392,22 +423,40 @@ a:link {
     */
 
 .subject-block__text {
-    font-size: .85rem;
+    font-family: roc-grotesk, sans-serif;
     font-weight: 400;
-    line-height: 1.3;
-    max-width: 70ch;
+    font-style: normal;
+    font-size: .9rem;
+    line-height: 1.4;
+    max-width: 75ch;
 }
 
 .subject-block__text--center {
-    font-size: .85rem;
+    font-size: .9rem;
     font-weight: 400;
     line-height: 1.3;
     width: auto;
 }
 
-.subject-block__title {
-    font-size: 1.1rem;
-    font-weight: 700;
+.subject-block__title_lg {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.subject-block__title_md {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+subject-block__largequote {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
 }
 
 .subject-block__subtitle {
@@ -424,10 +473,16 @@ a:link {
 
 .kernwaarden-wpl__pill {
     text-align: center;
-    font-weight: bold;
-    font-size: .65rem;
-    padding: .2rem;
-    border-radius: 2rem;;
+    color: #FDFDFD;
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .8rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    border-radius: .1rem;;
 }
 
 .document-scroll iframe {
@@ -440,20 +495,10 @@ a:link {
 
 #db_logo img { box-shadow: none; }
 
-/* --- GRAPHIC SKILLS PAGE --- */
-/* --- UI DESIGN PAGE --- */
-
-/* --- WEB ESSENTIALS PAGE --- */
-
-.web-inhoud img {
-    flex-wrap: wrap;
-}
-
 /* ---COLLIDER --- */
 /* --- LINE DRAWINGS --- */
 /* --- AMPERE --- */
 /* --- MEDIA --- */
-/* --- OTHER WORKS --- */
 
 /* --- BACK-TO-TOP BUTTON --- */
 
@@ -507,6 +552,7 @@ a:link {
 /* --- MD / MEDIUM - Meer dan 768px --- */
 
 @media only screen and (min-width: 768px) {
+
 }
 
 
@@ -514,9 +560,6 @@ a:link {
 
 @media only screen and (min-width: 992px) {
 
-    .navbar-pxl__listitem {
-        border-radius: 2rem;
-    }
     .navbar-my-work__listitem {
         border-radius: 1rem;
         border-collapse: collapse;
