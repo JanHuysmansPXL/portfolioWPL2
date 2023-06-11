@@ -28,7 +28,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 [class*="col"] img {
     width: 100%;
     height: auto;
-    border-radius: .25rem;
+    border-radius: .1rem;
 }
 
 /* --- COLORS --- */
@@ -40,7 +40,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 .color3 { background-color: #9B9BAB; }
 .color4 { background-color: #1E1E30; }
 .bg-red { background-color: #FF5757}
-.bg-dark { background-color: #121212; }
+.bg-darker { background-color: #121212; }
 
 .text-light { color: #FDFDFD; }
 .text-lightgrey { color: #F5F5F5}
@@ -220,96 +220,103 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 
 
 /* --- BIG BUTTONS STARTPAGINA --- */
-
-/*  FLEX naar beneden zetten: kolom opvullen met direction column, en stretchen naar beneden. */
-
-.large-button {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
-}
-
-.large-button__link {
-    font-size: 4rem;
-    color: #E1E1FF;
-    text-decoration: none;
-    align-self: center;
-}
-
-.large-button__link--active {
-    color: #E1E1FF;
-}
-
-#large-button-pxl { background-color: #5151EF; }
-
-#large-button-pxl:hover { background-color: #9B9BAB; }
-
-#large-button-my-work { background-color: #1E1E30; }
-
-#large-button-my-work:hover { background-color: #FF3D3D; }
-
-/* --- INTRO TEKST STARTPAGINA --- */
-
-.intro__headline {
-    font-size: 4rem;
-    font-weight: 800;
-}
-
-.intro__subheader {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-/* --- ABOUT TOP BAR --- */
-
-/* DELETED
+/* --- Nieuw !! --- */
 
 /* --- ABOUT --- */
 
-.about {
-    flex-wrap: nowrap;
+.about-top {
+    margin-top: 4rem;
 }
 
 .about__headline {
-    font-size: 1.15rem;
+    font-size: 2rem;
     font-weight: 600;
+    color: #FDFDFD;
+    padding: 0;
 }
 
 .about__subheader {
     font-size: .9rem;
     font-weight: 400;
-}
-
-.about__title {
-    font-size: 2rem;
-    font-weight: 800;
-}
-
-.about__subtitle {
-    font-size: 1.4rem;
+    color: #FDFDFD;
 }
 
 .about__text {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 400;
+    color: #FDFDFD;
+}
+
+.about__subtext {
+    font-size: .85rem;
+    font-weight: 300;
+    color: #FDFDFD;
 }
 
 .about__profielfoto {
-    border: none;
-    box-shadow: 0, 0, 0, #FFF;
+    border: 2px solid #FDFDFD;
+    width: 100%;
+    max-height: 360px;
 }
 
-.contact-link {
-    border-radius: 4rem;
+/* CONTACT -- NIEUW */
+
+.contact__heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FF5757;
+}
+
+.contact-txt-input {
+    border-radius: .1rem;
+
+}
+
+.contact-txt-input::placeholder {
+    color: #2C2C2C;
+}
+
+.adres__list {
+    list-style-type: none;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05rem;
-    white-space: nowrap;
+    list-style-position: inside;
+    padding-left: 0;
 }
-.contact-link:hover {
-    background-color: #ff7a7a;
+
+.contact__listitem {
+    margin-bottom: .2rem;
+    font-weight: 400;
+    font-size: .9rem;
 }
+
+.formulier__button {
+    display: inline;
+    color: #FDFDFD;
+    background-color: #FF3D3D;
+    border: none;
+    border-radius: .1rem;
+    padding: .15rem .4rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+.formulier__button:hover {
+    color: #FFFFFF;
+    background-color: #121212;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.contactformulier label {
+    display: none;
+}
+
+
+
 
 /* --- NAVBAR - PXL-DIGITAL --- */
 
@@ -489,61 +496,19 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
         font-size: 1.3rem;
     }
 
-    .about-left {
-        border-top-left-radius: .25rem;
-        border-top-right-radius: .25rem;
-    }
-
-    .about-right {
-        border-bottom-left-radius: .25rem;
-        border-bottom-right-radius: .25rem;
-    }
-
 }
 
 /* --- SM /  SMALL - Meer dan 576px breedte --- */
 
 @media only screen and (min-width: 576px) {
 
-
-    .about-left {
-        border-top-left-radius: .25rem;
-        border-top-right-radius: .25rem;
-    }
-
-    .about-right {
-        border-bottom-left-radius: .25rem;
-        border-bottom-right-radius: .25rem;
-    }
-
 }
 
 /* --- MD / MEDIUM - Meer dan 768px --- */
 
 @media only screen and (min-width: 768px) {
-
-    .intro__headline {
-        font-size: 4rem;
-        font-weight: 800;
-    }
-
-    .intro__subheader {
-        font-size: 1.75rem;
-    }
-
-    .about-left {
-        border-top-left-radius: .25rem;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: .25rem;
-    }
-    .about-right {
-        border-top-left-radius: 0;
-        border-top-right-radius: .25rem;
-        border-bottom-right-radius: .25rem;
-        border-bottom-left-radius: 0;
-    }
 }
+
 
 /* --- LG / LARGE - Meer dan 992px --- */
 
@@ -574,15 +539,5 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 
 @media only screen and (min-width: 1400px) {
 
-    #large-button-pxl {
-        border-top-left-radius: .25rem;
-        border-bottom-left-radius: .25rem;
-        box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.1);
-    }
 
-    #large-button-my-work {
-        border-top-right-radius: .25rem;
-        border-bottom-right-radius: .25rem;
-        box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.1);
-    }
 }
