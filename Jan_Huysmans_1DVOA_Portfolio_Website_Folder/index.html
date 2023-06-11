@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name ='viewport' content="width=device-width, initial scale=1.0">
+  <title>Portfolio WPL1 - Jan Huysmans</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap-grid.min.css">
+ <!-- <link rel="stylesheet" href="bootstrap-reboot.min.css"> -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!--  HEADER met Naam "Jan Huysmans" (centraal) 
+      en Links: About + Mail met hover en active states-->
+
+<header id="top-bar" class="top-bar container-xxl mb-lg-4">
+  <div class="row align-items-center py-3">
+    <div class="col-4 offset-4 text-align-center">
+      <a id="top-bar__nametag" class="top-bar__nametag top-bar__nametag--hover top-bar__nametag--active" href="index.html">Jan Huysmans</a>
+    </div>
+    <div class="col-4">
+      <div class="container">
+        <ul class="top-bar__list row justify-content-end py-2">
+          <li class="top-bar__listitem col-2 p-1 mx-3"><a class="top-bar__link top-bar__link--hover top-bar__link--active" href="about.html">About</a></li>
+          <li class="top-bar__listitem col-2 p-1 mx-3"><a class="top-bar__link top-bar__link--hover top-bar__link--active" href="mailto:12201074@student.pxl.be">Mail</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--  EXTRA LARGE BUTTONS - PXL DIGITAL + MY WORK
+      50% breedte en volledige hoogte per button (responsive) + hover + active
+      https://stackoverflow.com/questions/42194886/how-to-make-the-row-stretch-remaining-height/42195475#42195475
+      https://getbootstrap.com/docs/5.0/layout/containers/
+      -->
+
+<nav id="large-buttons" class="container-xxl">
+  <div class="row">
+    <div id="large-button-pxl" class="large-button col-12 col-md-6 p-4">
+      <a class="large-button__link large-button__link--active" href="werkplekleren1.html">PXL DIGITAL</a>
+    </div>
+    <div id="large-button-my-work" class="large-button col-12 col-md-6 p-4">
+      <a class="large-button__link large-button__link--active" href="collider.html">MY WORK</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Introductory Text ?-->
+
+<main>
+  <div class="intro container my-5 mx-auto justify-content-center">
+    <div class="row"><h1 class="intro__headline col-10 col-md-8 mx-auto text-align-center">Hi, I'm Jan.</h1></div>
+    <div class="row"><h2 class="intro__subheader col-10 col-md-8 mx-auto text-align-center">Digital Designer <span>+</span> Artist</h2></div>
+  </div>
+</main>
+
+</body>
+</html>
