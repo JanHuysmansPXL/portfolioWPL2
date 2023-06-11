@@ -144,7 +144,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 }
 
 .navbar-top__link:hover {
-    color: #FF3D3D;
+    color: #FF5757;
     font-size: 1.02rem;
     font-weight: 500;
 }
@@ -211,7 +211,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 }
 
 .projects-card-btn:active {
-    background-color: rgba(255, 87, 87, 0.8);
+    background-color: #FF5757;
     text-decoration: underline;
 }
 
@@ -292,7 +292,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 .formulier__button {
     display: inline;
     color: #FDFDFD;
-    background-color: #FF3D3D;
+    background-color: #FF5757;
     border: none;
     border-radius: .1rem;
     padding: .15rem .4rem;
@@ -331,10 +331,6 @@ a:link {
     border-bottom: 1px solid #FDFDFD;
 }
 
-.navbar-pxl__listitem_dark:hover {
-    background-color: #1E1E30;
-}
-
 .navbar-pxl-link_dark {
     font-family: roc-grotesk-wide, sans-serif;
     font-weight: 500;
@@ -354,11 +350,15 @@ a:link {
 }
 
 .navbar-pxl-link_dark:hover {
-    color: #FDFDFD;
+    color: #FF5757;
 }
 
-.navbar-pxl-link_dark:hover {
+.navbar-pxl-link_dark a:hover {
     color: #121212;
+}
+
+.navbar-pxl-link_currentpage {
+    font-weight: 300;
 }
 
 .navbar-pxl-link_dark:active {
@@ -380,7 +380,7 @@ a:link {
 }
 
 .navbar-my-work__listitem:hover {
-    background-color: #FF3D3D;
+    background-color: #FF5757;
 }
 
 .navbar-my-work__link {
@@ -507,23 +507,27 @@ subject-block__largequote {
 }
 
 .top-button__link {
-    background-color: #FF3D3D;
-    border-radius: 10rem;
-    box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.05);
-    color: #FFF;
-    text-decoration: none;
-    padding: .5rem 1rem;
     position: fixed;
+    color: #FDFDFD;
+    background-color: #FF5757;
+    border-radius: .2rem;
+    box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.05);
+    font-family: roc-grotesk-compressed, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-style: normal;
+    text-align: right;
+    text-decoration: none;
+    line-height: 1.5rem;
+    padding: .6rem .75rem;
     bottom: 1rem;
     right: 1rem;
     z-index: 2;
-
 }
 
 .top-button__link:hover {
-    padding: .52rem 1.02rem;
-    background-color: rgb(255, 81, 81);
-    text-decoration: underline;
+    padding: .65rem .8rem;
+    background-color: #121212;
 }
 
 /* --- MEDIA QUERIES RESPONSIVITEIT - XS / SM / MD / LG / XL / XXL --- */
@@ -571,7 +575,6 @@ subject-block__largequote {
         padding-right: 5rem;
     }
 }
-
 /* --- XL / EXTRA LARGE - Meer dan 1200px --- */
 
 @media only screen and (min-width: 1200px) {
@@ -581,6 +584,5 @@ subject-block__largequote {
 /* --- XXL - Meer dan 1400px --- */
 
 @media only screen and (min-width: 1400px) {
-
 
 }
