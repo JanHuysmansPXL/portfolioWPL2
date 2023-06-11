@@ -215,13 +215,6 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
     text-decoration: underline;
 }
 
-
-/* --- ABOUT --- */
-
-
-/* --- BIG BUTTONS STARTPAGINA --- */
-/* --- Nieuw !! --- */
-
 /* --- ABOUT --- */
 
 .about-top {
@@ -303,7 +296,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 }
 
 .formulier__button:hover {
-    color: #FFFFFF;
+    color: #FDFDFD;
     background-color: #121212;
 }
 
@@ -357,6 +350,10 @@ a:link {
     color: #121212;
 }
 
+.navbar-pxl-link_light:hover {
+    color: #FF5757;
+}
+
 .navbar-pxl-link_currentpage {
     font-weight: 300;
 }
@@ -374,7 +371,7 @@ a:link {
 .navbar-my-work__listitem {
     list-style-type: none;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #FDFDFD;
     border-radius: 0;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
 }
@@ -471,11 +468,13 @@ subject-block__largequote {
 }
 
 .subject-block__subtitle {
+    font-family: roc-grotesk, sans-serif;
     font-size: 1rem;
     font-weight: 600;
 }
 
 .subject-block__subtext {
+    font-family: roc-grotesk, sans-serif;
     font-size: .75rem;
     font-weight: 300;
 }
