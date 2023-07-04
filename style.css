@@ -520,6 +520,13 @@ subject-block__largequote {
     font-weight: 600;
 }
 
+.subject-block__subtitle--wide {
+    font-family: roc-grotesk-extrawide, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+}
+
 .subject-block__subtext {
     font-family: roc-grotesk, sans-serif;
     font-size: .75rem;
@@ -530,6 +537,14 @@ subject-block__largequote {
     font-family: roc-grotesk, sans-serif;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.subject-block__bodytext_lg {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8rem;
+    max-width: 35ch;
 }
 
 /* --- WERKPLEKLEREN PAGE --- */
@@ -612,6 +627,15 @@ subject-block__largequote {
         object-fit: cover;
         max-height: 240px;
         aspect-ratio: 1 / 1;
+    }
+
+    .subject-block__title_xl {
+        font-size: 2.5rem;
+    }
+
+    .subject-block__bodytext_lg {
+        font-size: 1.2rem;
+        max-width: 35ch;
     }
 
 }
