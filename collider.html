@@ -3,72 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name ='viewport' content="width=device-width, initial scale=1.0">
-  <title>Portfolio - Collider</title>
+  <title>Jan Huysmans - Collider</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/btd5dwl.css">
   <!-- <link rel="stylesheet" href="bootstrap-reboot.min.css"> -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="collider-body">
 
-<!--  HEADER met Naam "Jan Huysmans" (centraal) en Links: About + Mail met HOVER en (ACTIVE states) -->
+<!--  HEADER met Naam "Jan Huysmans" (centraal) en Links: About + Mail met hover en active states  -->
+<!--  NEW HEADER !!  With nametag and info link. -->
 
-<header id="top-bar" class="top-bar container-xxl mb-lg-4">
-  <div class="row align-items-center py-3">
-    <div class="col-4 offset-4 text-align-center">
-      <a id="top-bar__nametag" class="top-bar__nametag top-bar__nametag--hover top-bar__nametag--active" href="index.html">Jan Huysmans</a>
+<nav id="navbar-top" class="navbar-top container-fluid px-4 bg-lightgrey">
+  <div class="row align-items-center mx-auto justify-content-between py-1">
+    <div class="col-4 text-align-start">
+      <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active" href="index.html">Jan Huysmans</a>
     </div>
     <div class="col-4">
-      <div class="container">
-        <ul class="top-bar__list row justify-content-end py-2">
-          <li class="top-bar__listitem col-2 p-1 mx-3"><a class="top-bar__link top-bar__link--hover top-bar__link--active" href="about.html">About</a></li>
-          <li class="top-bar__listitem col-2 p-1 mx-3"><a class="top-bar__link top-bar__link--hover top-bar__link--active" href="mailto:12201074@student.pxl.be">Mail</a></li>
-        </ul>
-      </div>
+      <ul class="navbar-top__list row align-items-center justify-content-end my-0">
+        <li class="navbar-top__listitem col-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="info.html">Info</a></li>
+      </ul>
     </div>
   </div>
-</header>
+</nav>
 
-<!-- NAVBAR - MY WORK -->
+<!-- NAVBAR TOP - PXL DIGITAL -->
 
-<nav class="navbar-my-work container-xxl">
-  <ul class="navbar-my-work__list row justify-content-sm-around justify-content-lg-evenly">
-    <li class="navbar-my-work__listitem col-xs-12 col-lg-2 p-2 p-lg-1"><a class="navbar-my-work__link" href="collider.html">Collider</a></li>
-    <li class="navbar-my-work__listitem col-xs-12 col-lg-2 p-2 p-lg-1"><a class="navbar-my-work__link" href="line_drawings.html">Line Drawings</a></li>
-    <li class="navbar-my-work__listitem col-xs-12 col-lg-2 p-2 p-lg-1"><a class="navbar-my-work__link" href="ampere.html">Ampere</a></li>
-    <li class="navbar-my-work__listitem col-xs-12 col-lg-2 p-2 p-lg-1"><a class="navbar-my-work__link" href="media.html">Media</a></li>
-    <li class="navbar-my-work__listitem col-xs-12 col-lg-2 p-2 p-lg-1"><a class="navbar-my-work__link" href="other_works.html">Other</a></li>
+<nav class="navbar-pxl container-xxl mt-5">
+  <ul class="navbar-pxl__list row justify-content-sm-around justify-content-lg-center">
+    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl1.html">WPL1</a></li>
+    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl2.html">WPL2</a></li>
+    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="index.html">Digital</a></li>
+    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark navbar-pxl-link_currentpage" href="index.html">Art</a></li>
+    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="info.html">About</a></li>
   </ul>
 </nav>
 
 <!-- Main content 1 - COLLIDER -->
-
 <!-- TITEL -->
 <main>
-  <div class="page-head" >
-    <h2 class="page-head__title my-5">Collider</h2>
+
+  <!-- MAIN CONTENT - MEDIA -->
+  <div class="collider-head container-fluid bg-darker">
+    <div class="container mx-auto">
+      <!-- INTRO MEDIA -->
+      <div id="collider-intro" class="subject-block row text-light p-2 p-md-5 mt-3">
+        <div class="col-sm-12 justify-content-start">
+          <h2 class="subject-block__title_fat mt-2 text-red-prim">Collider.</h2>
+          <p class="subject-block__subdate text-grey_200">2018-2022</p>
+          <p class="subject-block__text mt-2">De reeks Collider is een breuk met voorgaande werken.</p>
+          <p class="subject-block__text mt-2 mb-3">Ik ga in dit werk op een systematische manier op zoek naar beelden,
+            patronen. Hieronder staan een aantal van de uitgewerkte tekeningen. Elk van
+            de getoonde tekeningen werd meteen in inkt uitgevoerd, zonder liniaal, dit
+            maakte deel uit van het proces.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Einde van de container -->
   </div>
 
   <!-- COLLIDER INHOUD -->
 
-  <div class="collider_inhoud container-xl">
-
-    <div id="collider_intro" class="subject-block row mx-auto color4 text-light round_corners p-4 my-3">
-      <div class="col-sm-12 justify-content-start">
-        <h2 class="subject-block__title_lg mt-1">Collider</h2>
-        <p class="subject-block__subtext">2019-2022</p>
-        <h4 class="subject-block__subtitle mt-3">Drawings</h4>
-        <p class="subject-block__text mt-2">De reeks Collider is een breuk met voorgaande werken. Ik ga in dit werk op een systematische manier op zoek naar beelden, patronen. Hieronder staan een aantal van de uitgewerkte tekeningen. Elk van de getoonde tekeningen werd meteen in inkt uitgevoerd, zonder liniaal, dit maakte deel uit van het proces.</p>
-        <h4 class="subject-block__subtitle mt-3">Digital / Axidraw</h4>
-        <p class="subject-block__text mt-2 mb-1 mb-3">Vanaf 2021 ben ik gaan experimenteren met het digitaliseren van mijn werk. Ik toon enkele voorbeelden, en ook prints die ik in 2022 maakte met een Axidraw Penplotter.</p>
-      </div>
-    </div>
+  <div class="collider_inhoud container">
 
     <!-- COLLIDER DRAWINGS -->
-
-    <div id="collider_drawings" class="subject-block row mx-auto bg-white text-dark round_corners p-4 my-5">
+    <div id="collider_drawings" class="subject-block row mx-auto bg-white text-dark round_corners p-4 mt-3">
       <div class="col-sm-12 my-2">
         <h2 class="subject-block__title_lg mt-1">Collider A3</h2>
         <p class="subject-block__subtext mb-3">2021-2022</p>
@@ -82,7 +84,7 @@
       <div class="col-6 col-sm-4 col-xl-2 my-3"><img src="assets/collider/collider_pen6@0.5x.jpg" alt="Collider tekening 6"></div>
     </div>
 
-    <div id="collider_drawings_large" class="subject-block row mx-auto bg-white text-dark round_corners p-4 my-5 justify-content-center">
+    <div id="collider_drawings_large" class="subject-block row mx-auto bg-white text-dark round_corners p-4 mt-3 justify-content-center">
       <div class="col-6 col-sm-12 my-2 p-1">
         <h2 class="subject-block__title_lg mt-1">Collider Large</h2>
         <p class="subject-block__subtext">2020-2021</p>
@@ -99,7 +101,7 @@
 
     <!-- COLLIDER DIGITAL -->
 
-    <div id="collider_digital" class="subject-block row mx-auto bg-white text-dark round_corners p-4 my-5">
+    <div id="collider_digital" class="subject-block row mx-auto bg-white text-dark round_corners p-4 mt-3">
       <div class="col-sm-12 my-2">
         <h2 class="subject-block__title_lg mt-1">Digital</h2>
         <p class="subject-block__subtext">2021-2022</p>
@@ -118,7 +120,7 @@
 
     <!-- COLLIDER PLOTTED -->
 
-    <div id="collider_plotted" class="subject-block row mx-auto bg-white text-dark round_corners p-4 my-5">
+    <div id="collider_plotted" class="subject-block row mx-auto bg-white text-dark round_corners p-4 mt-3">
       <div class="col-sm-12 my-2">
         <h2 class="subject-block__title_lg">Axidraw Plots</h2>
         <p class="subject-block__subtext">2022</p>
