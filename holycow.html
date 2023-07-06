@@ -15,30 +15,35 @@
 
 <body>
 
-<nav id="navbar-top" class="navbar-top container-fluid px-4 bg-lightgrey">
-    <div class="row align-items-center mx-auto justify-content-between py-1">
-        <div class="col-4 text-align-start">
-            <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active" href="index.html">Jan Huysmans</a>
-        </div>
-        <div class="col-4">
-            <ul class="navbar-top__list row align-items-center justify-content-end my-0">
-                <li class="navbar-top__listitem col-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="info.html">Info</a></li>
-            </ul>
+<!-- NEW NAVBAR with nametag and info link.-->
+
+<nav id="navbar-top" class="navbar-top container-fluid bg-lightgrey">
+    <div class="container-lg mx-auto">
+        <div class="row mx-auto align-items-center justify-content-between py-2">
+            <div class="col-5 text-start p-0">
+                <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active m-0" href="index.html">Jan Huysmans</a>
+            </div>
+            <div class="col-7 text-end p-0">
+                <ul class="navbar-top__list justify-content-end m-0">
+                    <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="info.html">About</a></li>
+                    <!-- <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="contact.html">Contact</a></li> -->
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
 
+<!-- NAVBAR SUBJECT PXL-->
 
-<!-- NAVBAR TOP - PXL DIGITAL -->
-<nav class="navbar-pxl container-xxl mt-5">
-    <ul class="navbar-pxl__list row justify-content-sm-around justify-content-lg-center">
-        <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl1.html">WPL1</a></li>
-        <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl2.html">WPL2</a></li>
-        <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark navbar-pxl-link_currentpage" href="index.html">Digital</a></li>
-        <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark " href="index.html">Art</a></li>
-        <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="info.html">About</a></li>
+<nav class="navbar-pxl container-xxl mt-4">
+    <ul class="navbar-pxl__list row justify-content-evenly justify-content-lg-center m-0">
+        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl1.html">WPL1</a></li>
+        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl2.html">WPL2</a></li>
+        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="index.html">DIGITAL</a></li>
+        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="index.html">ART</a></li>
     </ul>
 </nav>
+
 
 <main>
 
@@ -47,8 +52,8 @@
             <!-- INTRO HOLY COW -->
             <div id="holycow-intro" class="subject-block row text-light p-2 p-md-5 mt-3">
                 <div class="col-sm-12 justify-content-start">
-                    <h1 class="subject-block__title_xl mt-2 text-red-prim">Holy Cow!</h1>
-                    <h2 class="subject-block__bodytext_lg text-light mt-2">Building a kick-ass burger brand with a conscience.</h2>
+                    <h1 class="subject-block__title--xl mt-2 text-red-prim">Holy Cow!</h1>
+                    <h2 class="subject-block__text--lg text-light mt-2">Building a kick-ass burger brand with a conscience.</h2>
                 </div>
             </div>
         </div>
@@ -72,9 +77,9 @@
 
     <div class="container px-2 px-md-5">
         <div class="row mx-auto justify-content-center">
-            <div class="col-12 subject-block__title_md justify-content-center  ">
-                <p class="subject-block__bodytext_lg text-red-prim">Step 1.</p>
-                <p class="subject-block__bodytext_lg mt-3">What’s this brand about, dude ?</p>
+            <div class="col-12 subject-block__title--md justify-content-center  ">
+                <p class="subject-block__text--lg text-red-prim">Step 1.</p>
+                <p class="subject-block__text--lg mt-3">What’s this brand about, dude ?</p>
             </div>
         </div>
         <div class="subject-block row mx-auto justify-content-center align-items-center px-2 px-md-5 mt-3">
@@ -91,39 +96,109 @@
         </div>
     </div>
 
-    <!-- STEP 1 - BRAND MISSION / POSITIONING -->
+    <!-- STEP 2 - BRAND GUIDELINES / BIBLE -->
     <!-- ☝️☝️️☝️ RESPONSIVENESS OK ? ☝️☝️☝️ -->
 
-    <div class="container-lg px-2 px-md-4">
-        <div class="row mx-auto justify-content-end text-end">
-            <div class="col-12 subject-block__title_md p-0">
-                <p class="subject-block__bodytext_lg text-red-prim mx-auto">Step 2.</p>
-                <p class="subject-block__bodytext_lg mt-3 mx-auto">How 'bout the cow?</p>
+    <div class="container-lg px-2 px-md-4 mb-3">
+        <div class="row mx-auto justify-content-end">
+            <div class="col-12 subject-block__title--md p-0">
+                <p class="subject-block__text--lg mt-3 text-red-prim">Step 2.</p>
+                <p class="subject-block__text--lg text-darker">How 'bout the cow?</p>
             </div>
         </div>
     </div>
     <div class="container px-2 px-md-4">
-    <div class="subject-block row mx-auto justify-content-start align-items-center px-2 px-md-5 mt-3">
-            <div class="col-10 mb-2">
-                <p class="subject-block__text">We prototyped an app for Holy Cow!, and we made the brand bible. A collection of guidelines for the brand..</p>
-            </div>
+        <div class="subject-block row mx-auto justify-content-start align-items-center px-2 px-md-5 mt-3">
+                <div class="col-10 mb-2">
+                    <p class="subject-block__text">We prototyped an app for Holy Cow!, and we made the brand bible. A collection of guidelines for the brand..</p>
+                </div>
         </div>
-    </div>
+
         <div class="row mx-auto justify-content-center mt-1">
-            <div class="col-9 mt-4">
+            <div class="col-12">
+                <h2 class="text-align-center text-red-prim subject-block__text--center">Check the Brandguide.</h2>
+            </div>
+            <div class="col-9 mt-2">
                 <img class="boxshadow" src="assets/digital_branding/db_brandbook_holycow_8.jpg" alt="TinyHouse BrandGuide">
                 <a href="assets/tinyhouse/tinyhouse_brandbook.pdf" target="_blank" download="TinyHouse Brandbook - Jan Huysmans" class="download-link text-darker">Download the Brandguide PDF.</a>
-                <div class="col-12">
-                    <h2 class="text-align-center text-red-prim subject-block__text--center">Check the Brandguide.</h2>
-                </div>
-
                 <!-- ☝️☝️️☝️ DOWNLOAD LINK !! ☝️☝️☝️ -->
+            </div>
+        </div>
+    </div>
 
+    <!-- STEP 3 - SKETCHES - DESIGNING THE APP -->
+    <!-- ☝️☝️️☝️ RESPONSIVENESS OK ? ☝️☝️☝️ -->
+    <div class="container-fluid bg-darker py-3 px-2 px-md-5 my-4">
+        <div class="container mx-auto">
+            <div class="row mx-auto justify-content-center">
+                <div class="col-12 subject-block__title--md justify-content-center">
+                    <p class="subject-block__text--lg mt-3 text-red-prim">Step 3.</p>
+                    <p class="subject-block__text--lg text-light">Designing the app.</p>
+                </div>
+            </div>
+            <div id="ui-schetsen-holycow" class="row mx-auto justify-content-evenly text-light">
+                <div class="col-6 col-md-3 my-2"><img src="assets/ui_design/ui_schets_storyboard.png" alt="schets 1"></div>
+                <div class="col-6 col-md-3 my-2"><img src="assets/ui_design/ui_schets_2.png" alt="maan"></div>
+                <div class="col-6 col-md-3 my-2"><img src="assets/ui_design/ui_schets_3.png" alt="space"></div>
+                <div class="col-6 col-md-3 my-2"><img src="assets/ui_design/ui_schets_4.png" alt="Jef"></div>
+            </div>
+            <div class="row mx-auto justify-content-start mt-1">
+                <div class="col">
+                    <p class="subject-block__quote--lg text-light">I love sketching interfaces. —
+                        <br>Possibly just as much as a Holy Cow burger.</p>
+                </div>
             </div>
         </div>
     </div>
 
 
+    <!-- STEP 4 - USER FLOWS / FLOW FLOW FLOW-->
+    <!-- ☝️☝️️☝️ RESPONSIVENESS OK ? ☝️☝️☝️ -->
+
+    <div class="container px-2 px-md-5 mt-3">
+        <div class="row mx-auto">
+            <div class="col-12 subject-block__title--md p-0">
+                <p class="subject-block__text--lg text-red-prim">Step 4.</p>
+                <p class="subject-block__text--lg text-darker">Get flowing.</p>
+            </div>
+        </div>
+        <div class="subject-block row mx-auto justify-content-start align-items-center px-2 px-md-5 mt-3">
+            <div class="col-10 mt-2">
+                <p class="subject-block__text--md">I designed a large part of the Holy Cow-interface.</p>
+                <p class="subject-block__text--md mt-4">Our goal was to create an app where people could easily order and pick-up our delicious burgers.</p>
+            </div>
+        </div>
+        <div class="subject-block row mx-auto justify-content-between align-items-center px-2 px-md-5 mt-3">
+            <div class="my-2 mx-sm-auto col-sm-6"><img src="assets/ui_design/ui_task_login.png" alt="Component"></div>
+            <div class="my-2 mx-sm-auto col-sm-6"><img src="assets/ui_design/ui_task_eten.png" alt="Component"></div>
+        </div>
+    </div>
+
+
+    <!-- STEP 3 - SKETCHES - DESIGNING THE APP -->
+    <!-- ☝️☝️️☝️ RESPONSIVENESS OK ? ☝️☝️☝️ -->
+    <div class="container-fluid bg-darker py-3 px-2 px-md-5 mt-4">
+        <div class="container mx-auto">
+            <div class="row mx-auto justify-content-center">
+                <div class="col-12 subject-block__title--md justify-content-center">
+                    <p class="subject-block__text--lg mt-3 text-red-prim">Step 5.</p>
+                    <p class="subject-block__text--lg text-light">Molding the meadow.</p>
+                </div>
+            </div>
+            <div id="ui-wire-holycow" class="subject-block row mx-auto text-light">
+                <div class="my-2 col-6 col-sm-4 col-xl-2"><img src="assets/ui_design/ui_screen_makeyourown.png" alt="Make Your Own"></div>
+                <div class="my-2 col-6 col-sm-4 col-xl-2"><img src="assets/ui_design/ui_screen_product_details.png" alt="Product Details Screen"></div>
+                <div class="my-2 col-6 col-sm-4 col-xl-2"><img src="assets/ui_design/ui_screen_rewards.png" alt="Rewards Screen"></div>
+                <div class="my-2 col-6 col-sm-4 col-xl-2"><img src="assets/ui_design/ui_screen_mission.png" alt="Mission Screen"></div>
+                <div class="my-2 col-6 col-sm-4 col-xl-2"><img src="assets/ui_design/ui_screen_map.png" alt="Map Screen"></div>
+                <div class="my-2 col-6 col-sm-4 col-xl-2"><img src="assets/ui_design/ui_screen_payment.png" alt="Payment Screent"></div>
+                <div class="col-sm-12 col-md-12 my-2">
+                    <p class="subject-block__quote--md mt-2">Designing the Holy-Cow interface was a smash.</p>
+                    <p class="subject-block__quote--md mt-1">We tried to uphold an idea of zesty freshness, while trying to communicate our love for our planet, and it’s 4-bellied beings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <!-- FOOTER SECTION -->
@@ -157,6 +232,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- BACK TO TOP -->
+
+    <aside id="top-button" class="top-button">
+        <a class="top-button__link" href="#top">Back<br>to<br>top</a>
+    </aside>
+
 </div>
 </body>
 </html>

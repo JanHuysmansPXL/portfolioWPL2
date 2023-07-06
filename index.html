@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name ='viewport' content="width=device-width, initial scale=1.0">
-  <title>TEST INDEX TEST INDEX TEST INDEX</title>
+  <title>Jan Huysmans - INDEX</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,38 +17,40 @@
 
 <!-- NEW NAVBAR with nametag and info link.-->
 
-<nav id="navbar-top" class="navbar-top container-fluid px-4 bg-lightgrey">
-  <div class="row align-items-center mx-auto justify-content-between py-1">
-    <div class="col-4 text-align-start">
-      <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active" href="index.html">Jan Huysmans</a>
-    </div>
-    <div class="col-4">
-        <ul class="navbar-top__list row align-items-center justify-content-end my-0">
-          <li class="navbar-top__listitem col-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="info.html">Info</a></li>
-        </ul>
+<nav id="navbar-top" class="navbar-top container-fluid bg-darker">
+  <div class="container-lg mx-auto">
+    <div class="row mx-auto align-items-center justify-content-between py-2">
+      <div class="col-5 text-start p-0">
+        <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active m-0" href="index.html">Jan Huysmans</a>
+      </div>
+      <div class="col-7 text-end p-0">
+          <ul class="navbar-top__list justify-content-end m-0">
+            <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="info.html">About</a></li>
+           <!-- <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="contact.html">Contact</a></li> -->
+          </ul>
+      </div>
     </div>
   </div>
 </nav>
 
 <!-- NAVBAR SUBJECT PXL-->
 
-<nav class="navbar-pxl container-xxl mt-5">
+<nav class="navbar-pxl container-xxl mt-4">
   <ul class="navbar-pxl__list row justify-content-evenly justify-content-lg-center m-0">
     <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl1.html">WPL1</a></li>
     <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl2.html">WPL2</a></li>
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">Digital</a></li>
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">Art</a></li>
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="info.html">About</a></li>
+    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">DIGITAL</a></li>
+    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">ART</a></li>
   </ul>
 </nav>
 
 <!-- MAIN CONTENT - CARDS WITH HOPEFULLY AN OVERLAY -->
 
-<div id="projects" class="container-xxl p-4 mt-5 projects">
-  <div class="row">
+<section id="projects" class="container-xxl p-4 mt-4 projects">
+  <div class="row justify-content-center justify-content-md-start">
 
     <!-- ✅ KAART 1 - BUILDR -->
-    <div class="col-md-4">
+    <div class="col-12 col-md-6 col-lg-4 mt-0">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/buildr/buildr_mockupsgrid.png" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -58,13 +60,13 @@
           <h2 class="projects-card-txt--header">Buildr</h2>
           <h4 class="projects-card-txt--subheader text-red-prim">UX DESIGN / BRANDING / WEB DEVELOPMENT</h4>
           <p class="projects-card-txt--xs my-3">Buildr. is a (fictional) job-matching app for construction, metal and logistics. Branding, UX-design, prototyping and webdevelopment. Check out the case we developed with our team.</p>
-          <a href="assets/buildr/buildr_casestudy_pdf.pdf" target="_blank" class="btn projects-card-btn">Case study</a>
+          <a href="buildr.html" target="_blank" class="btn projects-card-btn">Case study</a>
         </div>
       </div>
     </div>
 
     <!-- ✅ KAART 2 - ONYX -->
-    <div class="col-md-4">
+    <div class="col-12 col-md-6 col-lg-4 mt-4 mt-md-0">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/onyx/onyx_p3.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -79,8 +81,8 @@
       </div>
     </div>
 
-    <!-- ✅ KAART 3 - TINYHOUYSE -->
-    <div class="col-md-4">
+    <!-- ✅ KAART 3 - TINYHOUSE -->
+    <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/tinyhouse/TinyHouse%20-%20Instagram%20Posts/TinyHouse---Instagram-Story-1080x1920-n1_EarthDay.gif" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -94,10 +96,8 @@
         </div>
       </div>
     </div>
-  </div>
-    <!-- ✅ KAART 4 - XXX -->
-  <div class="row mt-4">
-    <div class="col-md-4">
+    <!-- ✅ KAART 4 - HOLY COW! -->
+    <div class="col-12 col-md-6 col-lg-4 mt-4">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/digital_branding/holycow_sign.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -112,8 +112,8 @@
       </div>
     </div>
 
-    <!-- ✅ KAART 5 - XXX -->
-    <div class="col-md-4">
+    <!-- ✅ KAART 5 - COLLIDER -->
+    <div class="col-12 col-md-6 col-lg-4 mt-4">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/collider/collider_pen6@0.5x.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -128,8 +128,8 @@
       </div>
     </div>
 
-    <!-- ✅ KAART 6 - XXX -->
-    <div class="col-md-4">
+    <!-- ✅ KAART 6 - TRANSIT -->
+    <div class="col-12 col-md-6 col-lg-4 mt-4">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/transit/transit_poster.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -143,13 +143,45 @@
         </div>
       </div>
     </div>
-</div>
 
-</div>
+    <!-- ✅ KAART 7 - ZEVEN -->
+    <div class="col-12 col-md-6 col-lg-4 mt-4">
+      <div class="projects-card">
+        <div class="projects-card-img">
+          <img src="assets/line_drawings/line_limited6.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
+        </div>
+        <div class="projects-card-overlay"></div>
+        <div class="projects-card-txt">
+          <h2 class="projects-card-txt--header">Line Drawings</h2>
+          <h4 class="projects-card-txt--subheader text-red-prim">ART / DRAWING / PRINT</h4>
+          <p class="projects-card-txt--xs my-3">In 2017 I developed 5 statues for Transit.<br>A house and techno-event @ Club Ampere, Antwerp. I used Cinema4D and Rhino to make the forms, a Dutch firm helped me with the cutouts.</p>
+          <a href="transit.html" class="btn projects-card-btn">View project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ KAART 8 - ACHT -->
+    <div class="col-12 col-md-6 col-lg-4 mt-4">
+      <div class="projects-card">
+        <div class="projects-card-img">
+          <img src="assets/media/libertad2.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
+        </div>
+        <div class="projects-card-overlay"></div>
+        <div class="projects-card-txt">
+          <h2 class="projects-card-txt--header">Media</h2>
+          <h4 class="projects-card-txt--subheader text-red-prim">VIDEO / AUDIO / PHOTOGRAPHY</h4>
+          <p class="projects-card-txt--xs my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at deleniti enim maxime, odit quia velit. Cumque est possimus recusandae!</p>
+          <a href="transit.html" class="btn projects-card-btn">View project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Einde Rij -->
+  </div>
+  <!-- Einde Sectie -->
+</section>
 
 <!-- FOOTER SECTION -->
-
-
 <div class="container-fluid bg-darker pt-3 mx-auto">
   <div class="row justify-content-center">
     <div class="col-10 footer-bar"></div>

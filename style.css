@@ -105,7 +105,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 
 /* --- NAVBAR TOP --- NEW 🔥🔥🔥  --- */
 #navbar-top {
-    background-color: #FDFDFD;
+    background-color: #121212;
     box-shadow: 0 2px 15px rgba(20, 20, 20, 0.05);
     position: fixed;
     top: 0;
@@ -115,7 +115,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 }
 
 .navbar-top__nametag {
-    color: #121212;
+    color: #FDFDFD;
     font-size: 1.2rem;
     font-family: roc-grotesk-wide, sans-serif;
     font-weight: 400;
@@ -124,7 +124,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 }
 
 .navbar-top__nametag:hover {
-    color: #121212;
+    color: #FDFDFD;
     font-family: roc-grotesk-wide, sans-serif;
     font-weight: 600;
     font-size: 1.22rem;
@@ -140,14 +140,14 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 }
 
 .navbar-top__link {
+    font-family: roc-grotesk-wide, sans-serif;
     font-size: 1rem;
-    color: #121212;
+    color: #FDFDFD;
 }
 
 .navbar-top__link:hover {
-    color: #FF5757;
     font-size: 1.02rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .navbar-top__link:active {
@@ -304,7 +304,32 @@ text-decoration: underline;
 
 /* --- --- --- --- */
 
+.projects-card-btn--wide {
+    text-align: center;
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: .2rem;
+    background-color: #FDFDFD;
+    border: none;
+    border-radius: .1rem;
+    color: #121212;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    padding-right: .35rem;
+    padding-left: .35rem;
+}
 
+.projects-card-btn--wide:hover {
+    background-color: transparent;
+    color: #FDFDFD;
+}
+
+.projects-card-btn--wide:active {
+    color: #FDFDFD;
+    text-decoration: underline;
+}
 
 /* --- ABOUT --- */
 
@@ -549,6 +574,27 @@ a:link {
     max-width: 70ch;
 }
 
+.subject-block__text--md {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    max-width: 60ch;
+    margin: 0;
+    padding: 0;
+}
+
+.subject-block__text--lg {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8rem;
+    max-width: 35ch;
+    margin: 0;
+    padding: 0;
+}
+
 .subject-block__text--center {
     font-size: .95rem;
     font-weight: 400;
@@ -556,39 +602,48 @@ a:link {
     width: auto;
 }
 
-.subject-block__title_fat {
-    font-family: roc-grotesk-wide, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 3rem;
-}
-
-.subject-block__title_xl {
+.subject-block__title--xl {
     font-family: roc-grotesk-wide, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 5rem;
 }
 
-.subject-block__title_lg {
+.subject-block__title--lg {
     font-family: roc-grotesk, sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 3rem;
 }
 
-.subject-block__title_md {
+.subject-block__title--fat {
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.subject-block__title--md {
     font-family: roc-grotesk, sans-serif;
     font-weight: 800;
     font-style: normal;
     font-size: 2rem;
 }
 
-.subject-block__largequote {
+.subject-block__quote--lg {
     font-family: roc-grotesk, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.6rem;
+}
+
+.subject-block__quote--md {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3rem;
+    width: 54ch;
+    margin: auto;
 }
 
 .subject-block__subtitle {
@@ -616,14 +671,36 @@ a:link {
     font-weight: 600;
 }
 
-.subject-block__bodytext_lg {
-    font-family: roc-grotesk, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.8rem;
-    max-width: 35ch;
+.subject-block__list {
+    list-style-type: circle;
+    line-height: 1.8rem;
 }
 
+.subject-block__listitem--md {
+    text-decoration: none;
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- BUILDR PAGE --- */
+
+#buildr_logo {
+    min-height: fit-content;
+}
+
+#buildr_underlay_red {
+    z-index: -1;
+    margin-top: -10vh;
+}
+
+#buildr_background_mockups {
+    max-height: 45vh;
+    object-fit: cover;
+}
 /* --- WERKPLEKLEREN PAGE --- */
 
 .kernwaarden-wpl__pill {
@@ -691,6 +768,13 @@ a:link {
 
 @media only screen and (max-width: 576px) {
 
+    .navbar-top__nametag {
+        font-size: .9rem;
+    }
+    .navbar-top__link {
+        font-size: .8rem;
+    }
+
     .navbar-pxl__toggle {
         display: block;
     }
@@ -731,11 +815,11 @@ a:link {
         aspect-ratio: 1 / 1;
     }
 
-    .subject-block__title_xl {
+    .subject-block__title--xl {
         font-size: 2.5rem;
     }
 
-    .subject-block__bodytext_lg {
+    .subject-block__text--lg {
         font-size: 1.2rem;
         max-width: 35ch;
     }
