@@ -111,6 +111,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
     top: 0;
     left: calc(50%);
     transform: translate(-50%);
+    z-index: 999;
 }
 
 .navbar-top__nametag {
@@ -191,6 +192,56 @@ text-decoration: underline;
 }
 /* PROJECTS  */
 
+.projects-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-card-img {
+    position: relative;
+    z-index: 1;
+}
+
+.projects-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Overlay color and opacity */
+    opacity: 0;
+    transition: opacity 0.3s ease-in; /* Transition effect */
+    pointer-events: auto; /* Allows mouse events to pass through the overlay */
+    backdrop-filter: blur(.6rem); /* Apply blur effect */
+    z-index: 2;
+    border-radius: .1rem;
+    border: 2px solid white;
+}
+
+.projects-card:hover .projects-card-overlay {
+    opacity: 1;
+}
+
+.projects-card-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #121212;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transition effect */
+    z-index: 3;
+}
+
+.projects-card:hover .projects-card-txt {
+    opacity: 1;
+}
+
+/* Adjust the text styles as per your requirements */
+
 .projects-card-img {
     height: auto;
     aspect-ratio: 16/9;
@@ -198,9 +249,12 @@ text-decoration: underline;
     object-fit: cover;
 }
 
-.projects-card-txt {
-    color: #FDFDFD;
-    text-align: end;
+.projects-card-txt--xs {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .9rem;
+    margin: 0;
 }
 
 .projects-card-txt--header {
@@ -208,7 +262,6 @@ text-decoration: underline;
     font-weight: 700;
     font-style: normal;
     font-size: 1.2rem;
-    padding-top: .5rem;
     margin: 0;
 }
 
@@ -217,7 +270,6 @@ text-decoration: underline;
     font-weight: 300;
     font-style: normal;
     font-size: .7rem;
-    padding-top: .2rem;
     margin: 0;
 }
 
@@ -227,19 +279,19 @@ text-decoration: underline;
     font-weight: 600;
     font-style: normal;
     text-transform: uppercase;
-    margin-top: .5rem;
+    margin-top: .2rem;
     background-color: #FF5757;
     border: none;
     border-radius: .1rem;
     color: #FDFDFD;
     padding-top: .1rem;
     padding-bottom: .1rem;
-    padding-right: .2rem;
-    padding-left: .2rem;
+    padding-right: .25rem;
+    padding-left: .25rem;
 }
 
 .projects-card-btn:hover {
-    background-color: #FDFDFD;
+    background-color: transparent;
     border: none;
     border-radius: .1rem;
     color: #121212;
@@ -249,6 +301,10 @@ text-decoration: underline;
     background-color: #FF5757;
     text-decoration: underline;
 }
+
+/* --- --- --- --- */
+
+
 
 /* --- ABOUT --- */
 
@@ -344,6 +400,27 @@ a:link {
 }
 
 /* --- NAVBAR - PXL-DIGITAL -- AANGEPAST !! 🚀🚀 --- */
+
+.navbar-pxl {
+    position: relative;
+}
+
+.navbar-pxl__toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navbar-pxl__hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+}
+
+@media (max-width: 576px) {
+
+}
 
 .navbar-pxl__listitem_dark {
     list-style-type: none;
@@ -507,7 +584,7 @@ a:link {
     font-size: 2rem;
 }
 
-subject-block__largequote {
+.subject-block__largequote {
     font-family: roc-grotesk, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -614,6 +691,31 @@ subject-block__largequote {
 
 @media only screen and (max-width: 576px) {
 
+    .navbar-pxl__toggle {
+        display: block;
+    }
+
+    .navbar-pxl__list {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+
+    .navbar-pxl__listitem_dark {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #holycow-moodboard {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .intro__headline {
         font-size: 3rem;
         font-weight: 800;
@@ -649,6 +751,10 @@ subject-block__largequote {
 /* --- MD / MEDIUM - Meer dan 768px --- */
 
 @media only screen and (min-width: 768px) {
+
+    #holycow-moodboard {
+        margin-top: -20vh;
+    }
 
 }
 
