@@ -11,36 +11,41 @@
   <link rel="stylesheet" href="https://use.typekit.net/btd5dwl.css">
   <!-- <link rel="stylesheet" href="bootstrap-reboot.min.css"> -->
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body id="transit_body">
 
-<!--  HEADER met Naam "Jan Huysmans" (centraal) en Links: About + Mail met hover en active states  -->
-<!--  NEW HEADER !!  With nametag and info link. -->
+<!-- NEW NAVBAR with nametag and info link.-->
 
-<nav id="navbar-top" class="navbar-top container-fluid px-4 bg-lightgrey">
-  <div class="row align-items-center mx-auto justify-content-between py-2">
-    <div class="col-4 text-align-start">
-      <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active" href="indexOld.html">Jan Huysmans</a>
+<nav id="navbar-top" class="navbar-top container-fluid bg-darker">
+  <div class="container-lg mx-auto">
+    <div class="row mx-auto align-items-center justify-content-between py-2">
+      <div class="col-5 text-start p-0">
+        <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active m-auto" href="index.html">Jan Huysmans</a>
+      </div>
+      <div class="col-7 text-end p-0">
+        <ul class="navbar-top__list justify-content-end m-0">
+          <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active m-auto" href="info.html">About</a></li>
+          <!-- <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="contact.html">Contact</a></li> -->
+        </ul>
+      </div>
     </div>
-    <div class="col-4">
-      <ul class="navbar-top__list row align-items-center justify-content-end my-0">
-        <li class="navbar-top__listitem col-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="info.html">Info</a></li>
-      </ul>
+    <div class="row justify-content-center">
+      <div class="col-12 footer-bar"></div>
     </div>
   </div>
 </nav>
+<!-- NAVBAR SUBJECT PXL-->
 
-<!-- NAVBAR TOP - PXL DIGITAL -->
-
-<nav class="navbar-pxl container-xxl mt-5">
-  <ul class="navbar-pxl__list row justify-content-sm-around justify-content-lg-center">
-    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl1.html">WPL1</a></li>
-    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl2.html">WPL2</a></li>
-    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="index.html">Digital</a></li>
-    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark navbar-pxl-link_currentpage" href="indexOld.html">Art</a></li>
-    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="info.html">About</a></li>
+<nav class="navbar-pxl container-xxl mt-4">
+  <ul class="navbar-pxl__list row justify-content-evenly justify-content-lg-center m-0">
+    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl1.html">WPL1</a></li>
+    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl2.html">WPL2</a></li>
+    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">DIGITAL</a></li>
+    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">ART</a></li>
   </ul>
 </nav>
+
 
 <!-- NAVBAR OLD
 

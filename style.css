@@ -109,8 +109,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
     box-shadow: 0 2px 15px rgba(20, 20, 20, 0.05);
     position: fixed;
     top: 0;
-    left: calc(50%);
-    transform: translate(-50%);
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
     z-index: 999;
 }
 
