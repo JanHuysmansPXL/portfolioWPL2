@@ -6,10 +6,11 @@
   <title>Jan Huysmans - INDEX</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/btd5dwl.css">
   <link rel="stylesheet" href="bootstrap.min.css">
+  <script defer src="https://kit.fontawesome.com/3e2da0ee3d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="testnav.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </head>
@@ -36,16 +37,31 @@
     </div>
   </div>
 </nav>
-<!-- NAVBAR SUBJECT PXL-->
 
-<nav class="navbar-pxl container-xxl mt-4">
-  <ul class="navbar-pxl__list row justify-content-evenly justify-content-lg-center m-0">
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl1.html">WPL1</a></li>
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl2.html">WPL2</a></li>
+<div class="container-fluid">
+  <!-- Hover #1 -->
+  <div class="box-1 mt-4 row justify-content-center" id="myBtnContainer">
+    <div id="filter-all" class="btn-filter btn-one col-2 col-md-3 mx-3" onclick="filterSelection('all')">
+      <span>ALL</span>
+    </div>
+    <div id="filter-digital" class="btn-filter btn-one col-2 col-md-3 mx-3" onclick="filterSelection('digital')">
+      <span>DIGITAL</span>
+    </div>
+    <div id="filter-art" class="btn-filter btn-one col-2 col-md-3 mx-3" onclick="filterSelection('art')">
+      <span>ART</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- NAVBAR SUBJECT PXL
+<nav class="navbar-pxl container-fluid pt-4">
+  <ul class="navbar-pxl__list row justify-content-evenly justify-content-md-center m-0">
     <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">DIGITAL</a></li>
     <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">ART</a></li>
   </ul>
 </nav>
+-->
 
 <!-- MAIN CONTENT - CARDS WITH HOPEFULLY AN OVERLAY -->
 
@@ -53,7 +69,7 @@
   <div class="row justify-content-center justify-content-md-start">
 
     <!-- ✅ KAART 1 - BUILDR -->
-    <div class="col-12 col-md-6 col-lg-4 mt-0">
+    <div class="col-12 col-md-6 col-lg-4 mt-0 digital all column show">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/buildr/buildr_mockupsgrid.png" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -69,7 +85,7 @@
     </div>
 
     <!-- ✅ KAART 2 - ONYX -->
-    <div class="col-12 col-md-6 col-lg-4 mt-4 mt-md-0">
+    <div class="col-12 col-md-6 col-lg-4 mt-4 mt-md-0 digital column show">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/onyx/onyx_p3.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -85,7 +101,7 @@
     </div>
 
     <!-- ✅ KAART 3 - TINYHOUSE -->
-    <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+    <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 digital column show">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/tinyhouse/TinyHouse%20-%20Instagram%20Posts/TinyHouse---Instagram-Story-1080x1920-n1_EarthDay.gif" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -100,7 +116,7 @@
       </div>
     </div>
     <!-- ✅ KAART 4 - HOLY COW! -->
-    <div class="col-12 col-md-6 col-lg-4 mt-4">
+    <div class="col-12 col-md-6 col-lg-4 mt-4 digital column show">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/digital_branding/holycow_sign.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -116,7 +132,7 @@
     </div>
 
     <!-- ✅ KAART 5 - COLLIDER -->
-    <div class="col-12 col-md-6 col-lg-4 mt-4">
+    <div class="col-12 col-md-6 col-lg-4 mt-4 art column show">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/collider/collider_pen6@0.5x.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -132,7 +148,7 @@
     </div>
 
     <!-- ✅ KAART 6 - TRANSIT -->
-    <div class="col-12 col-md-6 col-lg-4 mt-4">
+    <div class="col-12 col-md-6 col-lg-4 mt-4 art column show">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/transit/transit_poster.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -148,7 +164,7 @@
     </div>
 
     <!-- ✅ KAART 7 - ZEVEN -->
-    <div class="col-12 col-md-6 col-lg-4 mt-4">
+    <div class="col-12 col-md-6 col-lg-4 mt-4 art column show">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/line_drawings/line_limited6.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">
@@ -164,7 +180,7 @@
     </div>
 
     <!-- ✅ KAART 8 - ACHT -->
-    <div class="col-12 col-md-6 col-lg-4 mt-4">
+    <div class="col-12 col-md-6 col-lg-4 mt-4 art column show">
       <div class="projects-card">
         <div class="projects-card-img">
           <img src="assets/media/libertad2.jpg" class="projects-card-img img-fluid" alt="Achtergrondafbeelding">

@@ -6,41 +6,44 @@
     <title>Jan Huysmans - Holy Cow!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/btd5dwl.css">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <script defer src="https://kit.fontawesome.com/3e2da0ee3d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
 
 <!-- NEW NAVBAR with nametag and info link.-->
 
-<nav id="navbar-top" class="navbar-top container-fluid bg-lightgrey">
+<nav id="navbar-top" class="navbar-top container-fluid bg-darker">
     <div class="container-lg mx-auto">
         <div class="row mx-auto align-items-center justify-content-between py-2">
             <div class="col-5 text-start p-0">
-                <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active m-0" href="index.html">Jan Huysmans</a>
+                <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active m-auto" href="index.html">Jan Huysmans</a>
             </div>
             <div class="col-7 text-end p-0">
                 <ul class="navbar-top__list justify-content-end m-0">
-                    <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="info.html">About</a></li>
+                    <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active m-auto" href="info.html">About</a></li>
                     <!-- <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="contact.html">Contact</a></li> -->
                 </ul>
             </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 footer-bar"></div>
         </div>
     </div>
 </nav>
 
 <!-- NAVBAR SUBJECT PXL-->
-
-<nav class="navbar-pxl container-xxl mt-4">
-    <ul class="navbar-pxl__list row justify-content-evenly justify-content-lg-center m-0">
-        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl1.html">WPL1</a></li>
-        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl2.html">WPL2</a></li>
-        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="index.html">DIGITAL</a></li>
-        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="index.html">ART</a></li>
+<nav class="navbar-pxl container-fluid bg-darker pt-4">
+    <ul class="navbar-pxl__list row justify-content-evenly justify-content-md-center m-0">
+        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl1.html">WPL1</a></li>
+        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl2.html">WPL2</a></li>
+        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">DIGITAL</a></li>
+        <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">ART</a></li>
     </ul>
 </nav>
 
@@ -50,7 +53,7 @@
     <div class="holycow-head container-fluid bg-darker">
         <div class="container mx-auto">
             <!-- INTRO HOLY COW -->
-            <div id="holycow-intro" class="subject-block row text-light p-2 p-md-5 mt-3">
+            <div id="holycow-intro" class="subject-block row text-light p-2 p-md-5">
                 <div class="col-sm-12 justify-content-start">
                     <h1 class="subject-block__title--xl mt-2 text-red-prim">Holy Cow!</h1>
                     <h2 class="subject-block__text--lg text-light mt-2">Building a kick-ass burger brand with a conscience.</h2>
@@ -118,13 +121,57 @@
             <div class="col-12">
                 <h2 class="text-align-center text-red-prim subject-block__text--center">Check the Brandguide.</h2>
             </div>
-            <div class="col-9 mt-2">
-                <img class="boxshadow" src="assets/digital_branding/db_brandbook_holycow_8.jpg" alt="TinyHouse BrandGuide">
-                <a href="assets/tinyhouse/tinyhouse_brandbook.pdf" target="_blank" download="TinyHouse Brandbook - Jan Huysmans" class="download-link text-darker">Download the Brandguide PDF.</a>
-                <!-- ☝️☝️️☝️ DOWNLOAD LINK !! ☝️☝️☝️ -->
+        </div>
+    </div>
+
+
+    <div id="holycowCarousel" class="container mb-3">
+        <div class="row justify-content-center mx-auto px-2 px-md-4">`
+            <div class="col-12 col-md-10 col-lg-9 col-xxl-8">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner round_corners">
+
+                        <div class="carousel-item active">
+                            <img src="assets/digital_branding/db_brandbook_holycow_1.jpg" class="d-block w-100" alt="Holy Cow! Brandbook Page 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/digital_branding/db_brandbook_holycow_2.jpg" class="d-block w-100" alt="Holy Cow! Brandbook Page 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/digital_branding/db_brandbook_holycow_3.jpg" class="d-block w-100" alt="Holy Cow! Brandbook Page 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/digital_branding/db_brandbook_holycow_4.jpg" class="d-block w-100" alt="Holy Cow! Brandbook Page 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/digital_branding/db_brandbook_holycow_5.jpg" class="d-block w-100" alt="Holy Cow! Brandbook Page 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/digital_branding/db_brandbook_holycow_6.jpg" class="d-block w-100" alt="Holy Cow! Brandbook Page 6">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/digital_branding/db_brandbook_holycow_7.jpg" class="d-block w-100" alt="Holy Cow! Brandbook Page 7">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/digital_branding/db_brandbook_holycow_8.jpg" class="d-block w-100" alt="Holy Cow! Brandbook Page 8">
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
+
 
     <!-- STEP 3 - SKETCHES - DESIGNING THE APP -->
     <!-- ☝️☝️️☝️ RESPONSIVENESS OK ? ☝️☝️☝️ -->

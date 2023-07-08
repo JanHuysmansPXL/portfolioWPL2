@@ -442,10 +442,6 @@ a:link {
     margin: 6px 0;
 }
 
-@media (max-width: 576px) {
-
-}
-
 .navbar-pxl__listitem_dark {
     list-style-type: none;
     text-align: center;
@@ -761,6 +757,24 @@ a:link {
     background-color: #121212;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.carousel-control-prev-icon {
+    height: 1rem;
+    position: absolute;
+    right: 65%;
+    z-index: 2;
+}
+
+.carousel-control-next-icon {
+    height: 1rem;
+    position: absolute;
+    left: 65%;
+    z-index: 2;
+}
 /* --- MEDIA QUERIES RESPONSIVITEIT - XS / SM / MD / LG / XL / XXL --- */
 
 /* --- XS / EXTRA SMALL - Minder dan 576px breedte = default state Bootstrap --- */
