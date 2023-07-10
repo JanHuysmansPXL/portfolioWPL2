@@ -10,44 +10,44 @@
   <link rel="stylesheet" href="https://use.typekit.net/btd5dwl.css">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <script defer src="https://kit.fontawesome.com/3e2da0ee3d.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </head>
 
 <body>
 
-<!-- NEW NAVBAR with nametag and info link.-->
 
-<nav id="navbar-top" class="navbar-top container-fluid bg-darker">
+<!--  ✅️️ NEW NAVBAR with NAME and collapsible - PROJECTS / ABOUT + scroll-animation. ✅ -->
+
+<nav id="navbar-top" class="navbar-top container-fluid bg-darker navbar-expand-sm">
   <div class="container-lg mx-auto">
-    <div class="row mx-auto align-items-center justify-content-between py-2">
+    <div class="row mx-auto align-items-start align-items-sm-center justify-content-between py-2">
       <div class="col-5 text-start p-0">
         <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active m-auto" href="index.html">Jan Huysmans</a>
       </div>
       <div class="col-7 text-end p-0">
-        <ul class="navbar-top__list justify-content-end m-0">
-          <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active m-auto" href="info.html">About</a></li>
-          <!-- <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="contact.html">Contact</a></li> -->
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-sharp fa-solid fa-bars text-light" id="navbar-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse text-end mx-auto" id="navbarCollapse">
+          <ul class="navbar-top__list justify-content-end ms-auto mt-2 flex-row flex-md-column">
+            <li class="navbar-top__listitem px-0 px-sm-2 d-block d-sm-inline-flex"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active m-auto" href="index.html">Projects</a></li>
+            <li class="navbar-top__listitem px-0 d-block d-sm-inline-flex"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active m-auto" href="info.html">About</a></li>
+          </ul>
+        </div>
       </div>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-12 footer-bar d-none"></div>
+    </div>
   </div>
-</nav>
-<!-- NAVBAR SUBJECT PXL-->
-
-<nav class="navbar-pxl container-xxl mt-4">
-  <ul class="navbar-pxl__list row justify-content-evenly justify-content-lg-center m-0">
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl1.html">WPL1</a></li>
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl2.html">WPL2</a></li>
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">DIGITAL</a></li>
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">ART</a></li>
-  </ul>
 </nav>
 
 <main>
   <!-- BUILDR --- MOCKUP  -->
 
-  <div id="wpl2-buildr" class="container-fluid pt-5">
+  <div id="wpl2-buildr" class="container-fluid pt-2 pt-md-5">
     <div class="subject-block row justify-content-center px-2 pt-5 text-darker">
       <div class="col-10 col-sm-6 col-lg-6 my-2 order-sm-2 align-self-start">
         <h2 class="subject-block__title--xl my-2">Buildr.</h2>
@@ -63,7 +63,7 @@
 
   <!-- BUILDR - 1. CASE INTRO -->
 
-  <div class="container px-2 px-md-4">
+  <div class="container px-2 px-md-4 overflow-hidden">
     <div class="row mx-auto">
       <div class="col-12 subject-block__title--md p-0">
         <h3 class="subject-block__text--lg text-red-prim">The case.</h3>
@@ -75,14 +75,14 @@
 
   <!-- BUILDR - 2. RESEARCH // PERSONA -->
 
-  <div class="container px-2 px-md-4 my-5">
-    <div class="row mx-auto">
+  <div class="container px-2 px-md-4 my-5 mx-auto overflow-hidden">
+    <div class="row mx-auto justify-content-center">
       <div class="col-12 col-md-5 order-2 order-md-1">
         <img class="img-fluid " src="assets/buildr/buildr_research1.png" alt="Researchresultaten Buildr.">
       </div>
-      <div class="col-12 col-md-5 offset-1 subject-block__title--md p-0 order-1 order-md-2">
-        <h3 class="subject-block__text--lg text-red-prim">Research.</h3>
-        <p class="subject-block__text--lg text-darker">How does our audience experience looking for a job ?</p>
+      <div class="col-12 col-md-5 offset-1 p-0 order-1 order-md-2">
+        <h3 class="subject-block__text--lg text-red-prim m-auto">Research.</h3>
+        <p class="subject-block__text--lg text-darker m-auto">How does our audience experience looking for a job ?</p>
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@
 
   <!-- BUILDR - 3. LEARNINGS -->
 
-  <div class="container px-2 px-md-4">
+  <div class="container px-2 px-md-4 overflow-hidden">
     <div class="row mx-auto">
       <div class="col-12 subject-block__title--md p-0">
         <p class="subject-block__text--lg text-red-prim">What we've learned.</p>
@@ -108,8 +108,8 @@
 
   <!-- BUILDR - 4. RESEARCH // PERSONA -->
 
-  <div class="container px-2 px-md-4 my-5">
-    <div class="row mx-auto">
+  <div class="container px-2 px-md-4 my-5 overflow-hidden">
+    <div class="row mx-auto justify-content-center">
       <div class="col-12 col-md-5 order-2 order-md-1">
         <img class="img-fluid " src="assets/buildr/buildr_persona_jos.jpg" alt="Buildr. Persona Jos">
       </div>
@@ -124,7 +124,7 @@
 
   <!-- BUILDR - 5. DEVELOPING THE BRAND -->
 
-  <div class="container px-2 px-md-4">
+  <div class="container px-2 px-md-4 mx-auto overflow-hidden">
     <div class="row mx-auto">
       <div class="col-12 subject-block__title--md p-0">
         <h3 class="subject-block__text--lg text-red-prim">Developing the brand.</h3>
@@ -139,7 +139,7 @@
 
   <!-- BUILDR - 6. THE LOGO -->
 
-  <div class="container px-2 px-md-4 my-5">
+  <div class="container px-2 px-md-4 my-5 mx-auto overflow-hidden">
     <h3 class="row subject-block__text--lg text-red-prim">The logo.</h3>
     <div class="row mx-auto mt-3 justify-content-center align-items-center mt-4">
       <div class="col-2">
@@ -151,13 +151,112 @@
     </div>
   </div>
 
-  <div class="container px-2 px-md-4 my-3">
+  <div class="container px-2 px-md-4 my-3 mx-auto overflow-hidden">
     <div class="row mx-auto justify-content-center">
       <div class="col-12">
         <h2 class="text-align-center text-red-prim subject-block__text--center">Check the Brandguide.</h2>
       </div>
+
+      <!--  CAROUSEL BUILDR -->
+      <div id="buildrCarousel" class="container mb-3 mx-auto overflow-hidden">
+        <div class="row justify-content-center mx-auto px-2 px-md-4">`
+          <div class="col-11 col-md-10 col-xxl-8">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+              <div class="carousel-inner round_corners">
+
+                <div class="carousel-item active">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook1.jpg" class="d-block w-100" alt="Buildr Brandbook Page 1">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook2.jpg" class="d-block w-100" alt="Buildr Brandbook Page 2">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook3.jpg" class="d-block w-100" alt="Buildr Brandbook Page 3">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook4.jpg" class="d-block w-100" alt="Buildr Brandbook Page 4">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook5.jpg" class="d-block w-100" alt="Buildr Brandbook Page 5">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook6.jpg" class="d-block w-100" alt="Buildr Brandbook Page 6">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook7.jpg" class="d-block w-100" alt="Buildr Brandbook Page 7">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook8.jpg" class="d-block w-100" alt="Buildr Brandbook Page 8">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook9.jpg" class="d-block w-100" alt="Buildr Brandbook Page 9">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook10.jpg" class="d-block w-100" alt="Buildr Brandbook Page 10">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook11.jpg" class="d-block w-100" alt="Buildr Brandbook Page 11">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook12.jpg" class="d-block w-100" alt="Buildr Brandbook Page 12">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook13.jpg" class="d-block w-100" alt="Buildr Brandbook Page 13">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook14.jpg" class="d-block w-100" alt="Buildr Brandbook Page 14">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook15.jpg" class="d-block w-100" alt="Buildr Brandbook Page 15">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook16.jpg" class="d-block w-100" alt="Buildr Brandbook Page 16">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook17.jpg" class="d-block w-100" alt="Buildr Brandbook Page 17">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook18.jpg" class="d-block w-100" alt="Buildr Brandbook Page 18">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="assets/buildr/buildrBrandbook/buildrBrandbook19.jpg" class="d-block w-100" alt="Buildr Brandbook Page 19">
+                </div>
+
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span aria-hidden="true"><i class="fa fa-angle-left control-prev-icon" aria-hidden="true"></i></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span aria-hidden="true"><i class="fa fa-angle-right control-next-icon" aria-hidden="true"></i></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="col-9 mt-2">
-        <img class="boxshadow img-fluid" src="assets/buildr/buildr_brandbook_frontpage.jpg" alt="Buildr. Brandguide Image">
         <a href="assets/buildr/buildr_brandguide_pdf.pdf" target="_blank" download="Buildr. Brandbook - Jan Huysmans" class="download-link text-darker">Download the Brandguide PDF.</a>
         <!-- ☝️☝️️☝️ DOWNLOAD LINK NOG AANVULLEN !! ☝️☝️☝️ -->
       </div>
@@ -168,7 +267,7 @@
   <!-- 8. - BUILDR. SKETCHES - DESIGNING THE APP -->
   <!-- ☝️☝️️☝️ RESPONSIVENESS OK ? ☝️☝️☝️ -->
 
-  <div class="container-fluid bg-darker py-5 px-2 px-md-5">
+  <div class="container-fluid bg-darker py-5 px-2 px-md-5 mx-auto overflow-hidden">
     <div class="container mx-auto">
       <div class="row mx-auto justify-content-center">
         <div class="col-12 subject-block__title--md justify-content-center">
@@ -187,7 +286,7 @@
 
   <!-- 9. FRAMING THE FLOW -->
 
-  <div class="container mx-auto my-3">
+  <div class="container-fluid mx-auto my-3">
     <div class="row mx-auto justify-content-center">
       <div class="col-12 subject-block__title--md justify-content-center">
         <h3 class="subject-block__text--lg text-red-prim mt-3">Framing the flow.</h3>
@@ -200,7 +299,7 @@
   </div>
   <div id="buildr_underlay_red" class="container-fluid bg-red-prim py-5">
     <div class="subject-block row py-lg-2 px-4 justify-content-start mx-auto">
-      <div class="col-xs-6 col-sm-10 my-2">
+      <div class="col-xs-6 col-sm-10 mt-5 mt-md-2 ">
         <p class="subject-block__quote--md text-light">“I got a free student upgrade after I needed over 500 elements to place on my boards. — Thank you, Whimsical.”</p>
       </div>
     </div>
@@ -208,7 +307,7 @@
   </div>
 
   <!-- 10. - BUILDR. WIREFRAMING -->
-  <div class="container px-2 px-md-4 mt-5 mb-4 mx-auto">
+  <div class="container px-2 px-md-4 mt-5 mb-4 mx-auto overflow-hidden">
     <div class="row justify-content-start mx-auto">
       <div class="col-12">
         <h3 class="row subject-block__text--lg text-red-prim">Wireframing.</h3>
@@ -232,7 +331,7 @@
 
   <!-- 11. - BUILDR. VISUAL DESIGN -->
 
-  <div class="container-fluid bg-darker py-5 px-2 px-md-5">
+  <div class="container-fluid bg-darker py-5 px-2 px-md-5 mx-auto overflow-hidden">
       <div class="row mx-auto justify-content-center">
         <div class="col-12 subject-block__title--md justify-content-center">
           <h3 class="subject-block__text--lg text-light">Visual design.</h3>
@@ -242,7 +341,7 @@
         </div>
       </div>
   </div>
-  <div class="container-fluid p-0 m-0">
+  <div class="container-fluid p-0 m-0 mx-auto">
     <div class="row mx-auto justify-content-center">
         <div class="col-12 p-0">
           <img id="buildr_background_mockups" class="img-fluid" src="assets/buildr/buildr_mockupsgrid.png" alt="Background image Buildr Mockups">
@@ -251,17 +350,17 @@
   </div>
 
   <!-- 12. - BUILDR. PRO -->
-  <div class="container px-2 px-md-4 my-5 mx-auto">
+  <div class="container px-2 px-md-4 my-5 mx-auto overflow-hidden">
     <div class="row justify-content-center align-items-center mx-auto">
-      <div class="col-2">
+      <div class="col-12 col-md-2 d-none d-md-block">
         <img class="wpl-buildr-img img-fluid align-self-start" src="assets/buildr/buildr_mockup_mobilesplash.png" alt="Buildr Wireframe Animation">
         <!-- ANIMATIE TOE TE VOEGEN ZIE GIF.-->
       </div>
-      <div class="col-2">
+      <div class="col-12 col-md-2">
         <img class="wpl-buildr-img img-fluid align-self-start" src="assets/buildr/buildr_mockup_mobilesplash.png" alt="Buildr Wireframe Animation">
         <!-- ANIMATIE TOE TE VOEGEN ZIE GIF.-->
       </div>
-        <div class="col-5 offset-1 subject-block__title--md p-0">
+        <div class="col-10 col-md-5 offset-1 subject-block__title--md p-0">
           <p class="subject-block__text--lg text-red-prim">What does Jos have to gain?</p>
           <ul class="subject-block__list mt-2">
             <li class="text-darker subject-block__listitem--md">Unique matching system.</li>
@@ -278,7 +377,7 @@
   <!-- 13. - BUILDR. SKETCHES - DESIGNING THE APP -->
   <!-- ☝️☝️️☝️ RESPONSIVENESS OK ? ☝️☝️☝️ -->
 
-  <div class="container-fluid bg-darker py-5 px-2 px-md-5">
+  <div class="container-fluid bg-darker py-5 px-2 px-md-5 overflow-hidden">
     <div class="container mx-auto">
       <div class="row mx-auto justify-content-center">
         <div class="col-12 subject-block__title--md justify-content-center">
