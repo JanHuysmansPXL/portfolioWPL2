@@ -109,8 +109,8 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
     box-shadow: 0 2px 15px rgba(20, 20, 20, 0.05);
     position: fixed;
     top: 0;
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
-    z-index: 999;
+    transition: top 0.5s; /* Transition effect when sliding down (and up) */
+    z-index: 99;
 }
 
 .navbar-top__nametag {
@@ -152,6 +152,11 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 .navbar-top__link:active {
     color: #5151EF;
     font-size: 1.02rem;
+}
+
+.navbar-toggler-icon {
+    color: #FDFDFD;
+    background-color: #FDFDFD;
 }
 
 /* FOOTER */
