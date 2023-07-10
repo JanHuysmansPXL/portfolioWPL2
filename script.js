@@ -18,9 +18,9 @@ window.onscroll = function() {
         document.getElementById("navbar-top").style.top = "0";
     } else {
         if (window.innerWidth < 576) {
-            document.getElementById("navbar-top").style.top = "-120px";
+            document.getElementById("navbar-top").style.top = "-140px";
         } else {
-            document.getElementById("navbar-top").style.top = "-50px";
+            document.getElementById("navbar-top").style.top = "-40px";
         }
     }
     prevScrollpos = currentScrollPos;

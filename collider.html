@@ -18,35 +18,30 @@
 <!--  HEADER met Naam "Jan Huysmans" (centraal) en Links: About + Mail met hover en active states  -->
 <!--  NEW HEADER !!  With nametag and info link. -->
 
-<!-- NEW NAVBAR with nametag and info link.-->
+<!--  ✅️️ NEW NAVBAR with NAME and collapsible - PROJECTS / ABOUT + scroll-animation. ✅ -->
 
-<nav id="navbar-top" class="navbar-top container-fluid bg-darker">
+<nav id="navbar-top" class="navbar-top container-fluid bg-darker navbar-expand-sm">
   <div class="container-lg mx-auto">
-    <div class="row mx-auto align-items-center justify-content-between py-2">
+    <div class="row mx-auto align-items-start align-items-sm-center justify-content-between py-2">
       <div class="col-5 text-start p-0">
         <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active m-auto" href="index.html">Jan Huysmans</a>
       </div>
       <div class="col-7 text-end p-0">
-        <ul class="navbar-top__list justify-content-end m-0">
-          <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active m-auto" href="info.html">About</a></li>
-          <!-- <li class="navbar-top__listitem d-inline-block ms-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="contact.html">Contact</a></li> -->
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-sharp fa-solid fa-bars text-light" id="navbar-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse text-end mx-auto" id="navbarCollapse">
+          <ul class="navbar-top__list justify-content-end ms-auto mt-2 flex-row flex-md-column">
+            <li class="navbar-top__listitem px-0 px-sm-2 d-block d-sm-inline-flex"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active m-auto" href="index.html">Projects</a></li>
+            <li class="navbar-top__listitem px-0 d-block d-sm-inline-flex"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active m-auto" href="info.html">About</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-12 footer-bar"></div>
     </div>
   </div>
-</nav>
-
-<!-- NAVBAR SUBJECT PXL-->
-<nav class="navbar-pxl container-fluid bg-darker pt-4">
-  <ul class="navbar-pxl__list row justify-content-evenly justify-content-md-center m-0">
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl1.html">WPL1</a></li>
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="wpl2.html">WPL2</a></li>
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">DIGITAL</a></li>
-    <li class="navbar-pxl__listitem_light col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_light" href="index.html">ART</a></li>
-  </ul>
 </nav>
 
 <!-- Main content 1 - COLLIDER -->

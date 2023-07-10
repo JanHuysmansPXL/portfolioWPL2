@@ -141,6 +141,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 .navbar-top__link {
     font-family: roc-grotesk-wide, sans-serif;
     font-size: 1rem;
+    line-height: 0rem;
     color: #FDFDFD;
 }
 
@@ -762,22 +763,23 @@ a:link {
     background-color: #121212;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(100%);
+.control-prev-icon,
+.control-next-icon {
+    font-size: 2rem;
+    color: #121212;
 }
 
-.carousel-control-prev-icon {
-    height: 1rem;
+.control-prev-icon {
+    height: 1.4rem;
     position: absolute;
-    right: 65%;
+    right: 120%;
     z-index: 2;
 }
 
-.carousel-control-next-icon {
-    height: 1rem;
+.control-next-icon {
+    height: 1.4rem;
     position: absolute;
-    left: 65%;
+    left: 120%;
     z-index: 2;
 }
 /* --- MEDIA QUERIES RESPONSIVITEIT - XS / SM / MD / LG / XL / XXL --- */
@@ -787,10 +789,17 @@ a:link {
 @media only screen and (max-width: 576px) {
 
     .navbar-top__nametag {
-        font-size: .9rem;
+        font-size: 1rem;
     }
     .navbar-top__link {
-        font-size: .8rem;
+        display: block;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    .navbar-top__link:hover {
+        display: block;
+        font-size: 1.5rem;
+        line-height: 3rem;
     }
 
     .navbar-pxl__toggle {

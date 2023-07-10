@@ -3,48 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name ='viewport' content="width=device-width, initial scale=1.0">
-  <title>Portfolio WPL2 - Jan Huysmans</title>
+  <title>Jan Huysmans - INDEX</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/btd5dwl.css">
   <link rel="stylesheet" href="bootstrap.min.css">
+  <script defer src="https://kit.fontawesome.com/3e2da0ee3d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
 
-<!--  HEADER met Naam "Jan Huysmans" (centraal) en Links: About + Mail met hover en active states  -->
+<!--  ✅️️ NEW NAVBAR with NAME and collapsible - PROJECTS / ABOUT + scroll-animation. ✅ -->
 
-<!-- NEW header with nametag and info link.-->
-
-<nav id="navbar-top" class="navbar-top container-fluid px-4">
-  <div class="row align-items-center mx-auto justify-content-between py-2">
-    <div class="col-4 text-align-start">
-      <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active" href="OBSOLETE_indexOld.html">Jan Huysmans</a>
+<nav id="navbar-top" class="navbar-top container-fluid bg-darker navbar-expand-sm">
+  <div class="container-lg mx-auto">
+    <div class="row mx-auto align-items-start align-items-sm-center justify-content-between py-2">
+      <div class="col-5 text-start p-0">
+        <a id="navbar-top__nametag" class="navbar-top__nametag navbar-top--hover navbar-top--active m-auto" href="index.html">Jan Huysmans</a>
+      </div>
+      <div class="col-7 text-end p-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-sharp fa-solid fa-bars text-light" id="navbar-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse text-end mx-auto" id="navbarCollapse">
+          <ul class="navbar-top__list justify-content-end ms-auto mt-2 flex-row flex-md-column">
+            <li class="navbar-top__listitem px-0 px-sm-2 d-block d-sm-inline-flex"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active m-auto" href="index.html">Projects</a></li>
+            <li class="navbar-top__listitem px-0 d-block d-sm-inline-flex"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active m-auto" href="info.html">About</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="col-4">
-      <ul class="navbar-top__list row align-items-center justify-content-end my-0">
-        <li class="navbar-top__listitem col-2"><a class="navbar-top__link navbar-top__link--hover navbar-top__link--active" href="info.html">Info</a></li>
-      </ul>
+    <div class="row justify-content-center">
+      <div class="col-12 footer-bar"></div>
     </div>
   </div>
 </nav>
-
-
-<!-- NAVBAR - PXL DIGITAL -->
-
-<nav class="navbar-pxl container-xxl mt-5">
-  <ul class="navbar-pxl__list row justify-content-sm-around justify-content-lg-center">
-    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark navbar-pxl-link_currentpage" href="wpl1.html">WPL1</a></li>
-    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="wpl2.html">WPL2</a></li>
-    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="OBSOLETE_indexOld.html">Digital</a></li>
-    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="index.html">Art</a></li>
-    <li class="navbar-pxl__listitem_dark col-xs-12 col-lg-1 py-2 p-lg-1 mx-2"><a class="navbar-pxl-link_dark" href="info.html">About</a></li>
-  </ul>
-</nav>
-
 <!-- Main content 1 - WERKPLEKLEREN 1 -->
 
 <main>
@@ -130,33 +126,33 @@
 </main>
 
 <!-- FOOTER SECTION -->
-
-<div class="container-fluid bg-darker pt-3 mx-auto">
+<div class="container bg-darker pt-3 mx-auto">
   <div class="row justify-content-center">
-    <div class="col-10 footer-bar"></div>
+    <div class="col-12 footer-bar"></div>
   </div>
 </div>
 <div class="container-fluid bg-darker pt-3">
-  <footer class="row justify-content-center footer">
+  <footer class="row justify-content-around footer">
     <div class="col-10">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-sm-6 col-md-3 text-center text-sm-start">
           <h4 class="footer--header_sm text-light">CONTACT</h4>
           <p class="footer--text text-light">For inquiries,<br>potential collaborations,<br>or anything else really, <br>please
-            <a class="footer--link" href="mailto:12201074@student.pxl.be">email me.</a></p>
+            <a class="footer--link" href="mailto:jan_huysmans@outlook.com">email me.</a></p>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-6 col-md-3 text-center text-sm-start">
           <h4 class="footer--header_sm text-light">SOCIAL</h4>
           <p class="footer--text text-light">I don’t do Facebook.<br>I don’t do Instagram.<br>Sorry, not sorry.</p>
-          <p class="footer--text text-light">Visit my <a class="footer--link text-light" href="https://www.linkedin.com/anotherJanHuysmans">LinkedIn</a>.</p>
+          <p class="footer--text text-light">Visit my <a class="footer--link text-light" href="https://www.linkedin.com/in/anotherjanhuysmans" target="_blank">LinkedIn</a>.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-6 col-md-3 text-center text-sm-start">
           <h4 class="footer--header_sm text-light">PROJECTS</h4>
           <p class="footer--text text-light">Check out my latest projects <a class="footer--link" href="index.html">here.</a></p>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-6 col-md-3 text-center text-sm-start">
           <h4 class="footer--header_sm text-light">SPOTIFY</h4>
           <p class="footer--text text-light">Get my vibe <a class="footer--link" href="#">here.</a></p>
+          <!-- ⚠️ SPOTIFY LINK NOG NIET ACTIEF ⚠️ -->
         </div>
       </div>
     </div>
