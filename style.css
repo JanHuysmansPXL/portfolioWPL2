@@ -31,6 +31,11 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
     border-radius: .1rem;
 }
 
+.squareimg {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
 /* --- COLORS --- */
 
 .bg-white { background-color: #ffffff; }
@@ -368,9 +373,10 @@ text-decoration: underline;
 }
 
 .about__profielfoto {
-    border: 2px solid #FDFDFD;
+    border: 1px solid #FDFDFD;
     width: 100%;
     max-height: 360px;
+    object-fit: cover;
 }
 
 /* CONTACT -- NIEUW */
@@ -545,6 +551,12 @@ a:link {
     font-weight: 700;
     font-size: 1.6rem;
     text-decoration: underline;
+}
+
+/* DRAWINGS */
+
+.linedrawing_pop {
+    border: 2px solid #FDFDFD;
 }
 
 /* WPL1 */
@@ -846,7 +858,7 @@ a:link {
     }
 
     .subject-block__text--lg {
-        font-size: 1rem;
+        font-size: 1.25rem;
         max-width: 35ch;
     }
 
