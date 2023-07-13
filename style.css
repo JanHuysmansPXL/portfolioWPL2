@@ -47,12 +47,14 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 .bg-red-prim { background-color: #FF5757}
 .bg-darker { background-color: #121212; }
 
+.text-color2 { color: #5151EF; }
+.text-red-prim { color: #FF5757}
 .text-light { color: #FDFDFD; }
 .text-lightgrey { color: #F5F5F5}
-.text-color2 { color: #5151EF; }
 .text-grey_200 { color: #DADADA; }
-.text-color4 { color: #1E1E30; }
-.text-red-prim { color: #FF5757}
+.text-grey_500 { color: #888888; }
+.text-grey_700 { color: #4D4D4D; }
+.text-grey_800 { color: #1C1C1C; }
 .text-darker { color: #121212; }
 
 /* UTILITIES */
@@ -341,6 +343,14 @@ text-decoration: underline;
     text-decoration: underline;
 }
 
+#transitVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 /* --- ABOUT --- */
 
 .about-top {
@@ -379,9 +389,24 @@ text-decoration: underline;
     object-fit: cover;
 }
 
+.about-int--title {
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.35rem;
+}
+
+.about-int {
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    margin: auto;
+}
+
 .about-int:hover {
     color: #FDFDFD;
-    font-size: 1.5rem;
+    font-size: 1.05rem;
 }
 
 /* CONTACT -- NIEUW */
@@ -710,6 +735,7 @@ a:link {
 }
 
 #buildr_underlay_red {
+    min-height: 20vh;
     z-index: -1;
     margin-top: -10vh;
 }
@@ -781,19 +807,17 @@ a:link {
 
 .control-prev-icon,
 .control-next-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #121212;
 }
 
 .control-prev-icon {
-    height: 1.4rem;
     position: absolute;
     right: 120%;
     z-index: 2;
 }
 
 .control-next-icon {
-    height: 1.4rem;
     position: absolute;
     left: 120%;
     z-index: 2;
@@ -847,7 +871,7 @@ a:link {
         opacity: 0;
         transition: opacity 0.3s ease-in; /* Transition effect */
         pointer-events: auto; /* Allows mouse events to pass through the overlay */
-        backdrop-filter: blur(.8rem); /* Apply blur effect */
+        backdrop-filter: blur(.6rem); /* Apply blur effect */
         z-index: 2;
         border-radius: .1rem;
         border: 2px solid white;
