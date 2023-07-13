@@ -358,6 +358,7 @@ text-decoration: underline;
 }
 
 .about__headline {
+    font-family: roc-grotesk, sans-serif;
     font-size: 2rem;
     font-weight: 600;
     color: #FDFDFD;
@@ -365,18 +366,23 @@ text-decoration: underline;
 }
 
 .about__subheader {
+    font-family: roc-grotesk, sans-serif;
     font-size: .9rem;
     font-weight: 400;
     color: #FDFDFD;
 }
 
 .about__text {
+    font-family: roc-grotesk, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #FDFDFD;
+    hyphenate-limit-chars: 10 4 4;
+    hyphens: auto;
 }
 
 .about__subtext {
+    font-family: roc-grotesk, sans-serif;
     font-size: .85rem;
     font-weight: 300;
     color: #FDFDFD;
