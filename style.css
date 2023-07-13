@@ -36,6 +36,11 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
     object-fit: cover;
 }
 
+.topfill {
+    height: 3rem;
+    margin-top: -36px;
+}
+
 /* --- COLORS --- */
 
 .bg-white { background-color: #ffffff; }
@@ -79,9 +84,10 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 }
 
 .download-link {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
     display: inline-block;
     text-decoration: none;
-    font-weight: bold;
     font-size: .8rem;
 }
 
@@ -167,7 +173,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
     background-color: #FDFDFD;
 }
 
-/* FOOTER */
+/* --- FOOTER --- */
 
 .footer-bar {
     background-color: #FDFDFD;
@@ -202,6 +208,7 @@ deze selector wordt gebruikt om alle afbeeldingen binnen een kolom te selecteren
 .footer--link:hover {
 text-decoration: underline;
 }
+
 /* PROJECTS  */
 
 .projects-card {
@@ -234,6 +241,10 @@ text-decoration: underline;
     opacity: 1;
 }
 
+.projects-card:hover .projects-card-txt {
+    opacity: 1;
+}
+
 .projects-card-txt {
     position: absolute;
     top: 50%;
@@ -247,12 +258,6 @@ text-decoration: underline;
     transition: opacity 0.3s ease; /* Transition effect */
     z-index: 3;
 }
-
-.projects-card:hover .projects-card-txt {
-    opacity: 1;
-}
-
-/* Adjust the text styles as per your requirements */
 
 .projects-card-img {
     height: auto;
