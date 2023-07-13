@@ -446,6 +446,7 @@ text-decoration: underline;
 }
 
 .formulier__button {
+    font-family: roc-grotesk, sans-serif;
     display: inline;
     color: #FDFDFD;
     background-color: #FF5757;
