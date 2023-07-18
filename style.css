@@ -740,6 +740,12 @@ a:link {
     padding: 0;
 }
 
+/* ERR 4444 */
+
+#errormessage {
+    margin-top: 40vh;
+}
+
 /* --- BUILDR PAGE --- */
 
 #buildr_logo {
@@ -974,7 +980,6 @@ a:link {
         text-decoration: underline;
     }
 
-
     #holycow-moodboard {
         margin-top: 0;
         margin-left: auto;
@@ -1010,9 +1015,9 @@ a:link {
         max-width: 40ch;
     }
 
-
-
 }
+
+
 
 /* --- SM /  SMALL - Meer dan 576px breedte --- */
 
